@@ -1,0 +1,164 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+    background:
+  linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+  linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+background-size: 100px 100px;
+background-color: #EC173A;
+} */
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+#container>div{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(246, 247, 248, .85);
+}
+#container>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 10px;
+}
+.productImg{
+    border-radius: 15px;
+}
+.name{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+img{
+    width: 100%;
+}
+#addToCart{
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: rgb(6, 167, 6);
+    border: transparent;
+    border-radius: 15px;
+    width: 80%;
+    
+}
+#addToCart:hover{
+    background-color: green;
+}
+.priceBox{
+    display: flex;
+    margin-top: -10px;
+    /* gap: 20px; */
+    justify-content: space-around;
+}
+.price, .strikeOff{
+    font-size: 16px;
+}
+.strikeOff{
+    text-decoration: line-through;
+}
+#container+button{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(88, 88, 247);
+    border: none;
+    border-radius: 15px;
+}
+button>a{
+    color: white;
+    text-decoration: none;
+}
+.category{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 20px;
+}
+#filter{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    text-align: center;
+    cursor: pointer;
+}
+#filter:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+@media all and (min-width: 451px) and (max-width: 750px) {
+    #container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    #addToCart{
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+.del{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.deltAll{
+    color: red;
+    border: 1px solid rgb(205, 205, 205);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 13px;
+    background-color: white;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.cartAbout{
+    display: flex;
+    justify-content: space-around;
+}
+#totalPrice, #items{
+    /* text-align: center; */
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#coupon{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input[type = "text"],input[type = "submit"]{
+    font-size: 18px;
+}
+input[type= "submit"]{
+    background-color: rgba(209, 209, 209, 0.296);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media all and (min-width: 100px) and (max-width: 450px) {
+    #container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+}

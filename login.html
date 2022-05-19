@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="logSign.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <h2><a href="index.html">ReeBok</a></h2>
+        </div>
+        <div id="otherHalf">
+            <div id="links">
+                <a href="mens.html">Men</a>
+                <a href="womens.html">Women</a>
+            </div>
+            <div id="logSign">
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="container">
+        <h3>Login</h3>
+        <form id="form">
+            <label >Email</label>
+            <input type="email" id="loginEmail" placeholder="Enter Your Email" required>
+            <label >Password</label>
+            <input type="password" id="loginPass" placeholder="Enter Password" required>
+            <input type="submit" value="LOGIN" id="enter">
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+</body>
+<script src="login.js"></script>
+<script src="index.js"></script>
+</html>
